@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students Grade Calculator</title>
+</head>
+<body>
+
+<h2>Students Grade Calculator</h2>
+
+<script>
+let name = prompt("Enter Student Name:");
+let score = Number(prompt("Enter Student Score:"));
+
+let grade;
+
+if (score >= 70) {
+    grade = "A";
+} else if (score >= 60) {
+    grade = "B";
+} else if (score >= 50) {
+    grade = "C";
+} else if (score >= 45) {
+    grade = "D";
+} else if (score >= 40) {
+    grade = "E";
+} else {
+    grade = "F";
+}
+
+document.write("<h3>Result</h3>");
+document.write("Student: " + name + "<br>");
+document.write("Score: " + score + "<br>");
+document.write("Grade: " + grade);
+</script>
+
+</body>
+</html>
