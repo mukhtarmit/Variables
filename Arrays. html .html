@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Arrays - Advanced Assignment</title>
+</head>
+<body>
+
+<h1>Advanced Arrays in JavaScript</h1>
+
+<script>
+// Create an array of students
+let students = ["Mukhtar", "Aisha", "Umar", "Fatima", "Zainab"];
+
+// Display original array
+document.write("<h2>Original Students List</h2>");
+document.write(students.join(", "));
+document.write("<hr>");
+
+// Add a new student
+students.push("Abdullahi");
+
+document.write("<h2>After Adding a Student</h2>");
+document.write(students.join(", "));
+document.write("<hr>");
+
+// Remove the last student
+students.pop();
+
+document.write("<h2>After Removing the Last Student</h2>");
+document.write(students.join(", "));
+document.write("<hr>");
+
+// Sort the array alphabetically
+students.sort();
+
+document.write("<h2>Sorted Students</h2>");
+document.write(students.join(", "));
+document.write("<hr>");
+
+// Reverse the array
+students.reverse();
+
+document.write("<h2>Reversed Students</h2>");
+document.write(students.join(", "));
+document.write("<hr>");
+
+// Find a student
+let searchName = prompt("Enter a student's name to search:");
+
+if (students.includes(searchName)) {
+    document.write("<h2>Search Result</h2>");
+    document.write(searchName + " is in the student list.<br>");
+} else {
+    document.write("<h2>Search Result</h2>");
+    document.write(searchName + " was not found in the student list.<br>");
+}
+
+document.write("<hr>");
+
+// Display all students using a loop
+document.write("<h2>Students Using a Loop</h2>");
+for (let i = 0; i < students.length; i++) {
+    document.write((i + 1) + ". " + students[i] + "<br>");
+}
+
+// Display total number of students
+document.write("<hr>");
+document.write("<h2>Total Number of Students</h2>");
+document.write(students.length);
+
+</script>
+
+</body>
+</html>
